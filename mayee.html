@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Button</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #FFD500, #FF95FC);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .play-icon {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            border: 5px solid #4CAF50;
+            position: relative;
+        }
+
+        .triangle {
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 50px solid #4CAF50;
+            border-top: 30px solid transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="play-icon">
+        <div class="triangle"></div>
+    </div>
+    
+    <button onclick="playGame()">Play Tic Tac Toe</button>
+
+    <script>
+        function playGame() {
+            // Redirect to the Tic Tac Toe game page
+            window.location.href = "file:///C:/Users/USER/TicTacToe.html";
+        }
+    </script>
+
+</body>
+</html>
